@@ -12,35 +12,12 @@ import Image from "next/image";
 // - alt: The alt text of the image (if type is 'image')
 const features = [
   {
-    title: "Emails",
+    title: "Expert interview engineers",
     description:
-      "Send transactional emails, setup your DNS to avoid spam folder (DKIM, DMARC, SPF in subdomain), and listen to webhook to receive & forward emails",
-    type: "video",
-    path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
-    format: "video/webm",
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Payments",
-    description:
-      "Create checkout sessions, handle webhooks to update user's account (subscriptions, one-time payments...) and tips to setup your account & reduce chargebacks",
+      "Tired of inconsistent interviews? Our vetted engineers deliver precision and expertise with each session, ensuring a seamless experience for candidates and clear outcomes for your team.",
     type: "image",
-    path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    alt: "A computer",
+    path: "https://images.unsplash.com/photo-1514543250559-83867827ecce?q=80&w=2850&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Expert interview engineers",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -59,10 +36,36 @@ const features = [
     ),
   },
   {
-    title: "Authentication",
+    title: "Battle-tested Content",
     description:
-      "Magic links setup, login with Google walkthrough, save user in MongoDB/Supabase, private/protected pages & API calls",
+      "Our robust interview questions are the crucible through which only the most competent engineers emerge. Don't let subpar content be the weak link in your hiring chain.",
+      type: "image",
+      path: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Code",
     svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          strokeLinecap="round"
+          d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Flexible Scheduling",
+    description:
+      "Never miss out on top talent due to scheduling conflicts. Our service ensures round-the-clock availability, making interviews possible at any hour – because the right moment to hire should be on your terms.",
+      type: "image",
+      path: "https://images.unsplash.com/photo-1578625155481-7bc40a6481b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FsZW5kYXJ8ZW58MHx8MHx8fDI%3D",
+      alt: "A Calender",
+      svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -80,10 +83,13 @@ const features = [
     ),
   },
   {
-    title: "Style",
+    title: "Consistent hiring processes",
     description:
-      "Components, animations & sections (like this features section), 20+ themes with daisyUI, automatic dark mode",
-    svg: (
+      "Our structured interview system eliminates variables that can skew evaluations, creating an equitable platform for all candidates. Trust in a process designed to spotlight true skill over circumstantial performance.",
+      type: "image",
+      path: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "A computer",
+      svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -117,12 +123,12 @@ const Item = ({ feature, isOpen, setFeatureSelected }) => {
         }}
         aria-expanded={isOpen}
       >
-        <span className={`duration-100 ${isOpen ? "text-primary" : ""}`}>
+        <span className={`duration-100 ${isOpen ? "text-blue-500" : ""}`}>
           {svg}
         </span>
         <span
           className={`flex-1 text-base-content ${
-            isOpen ? "text-primary font-semibold" : ""
+            isOpen ? "text-blue-500 font-semibold" : ""
           }`}
         >
           <h3 className="inline">{title}</h3>
@@ -195,10 +201,12 @@ const FeaturesAccordion = () => {
       id="features"
     >
       <div className="px-8">
+      <p className="inline-block font-semibold text-blue-500 mb-4">Features</p>
+
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
-          All you need to ship your startup fast
+          How our interviews help you
           <span className="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-            and get profitable
+            hire the best Engineers 
           </span>
         </h2>
         <div className=" flex flex-col md:flex-row gap-12 md:gap-24">

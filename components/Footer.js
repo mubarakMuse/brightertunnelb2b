@@ -8,7 +8,7 @@ import logo from "@/app/icon.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-base-200 border-t border-base-content/10">
+    <footer className="bg-base-100 border-t border-base-content/10">
       <div className="max-w-7xl mx-auto px-8 py-24">
         <div className=" flex lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
@@ -54,7 +54,7 @@ const Footer = () => {
                     Support
                   </a>
                 )}
-                <Link href="/#pricing" className="link link-hover">
+                {/* <Link href="/#pricing" className="link link-hover">
                   Pricing
                 </Link>
                 <Link href="/blog" className="link link-hover">
@@ -62,7 +62,7 @@ const Footer = () => {
                 </Link>
                 <a href="/#" target="_blank" className="link link-hover">
                   Affiliates
-                </a>
+                </a> */}
               </div>
             </div>
 

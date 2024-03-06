@@ -10,11 +10,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.1",
     "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.1.1",
     "@supabase/auth-helpers-nextjs": "^0.8.1",
     "@supabase/supabase-js": "^2.38.3",
     "axios": "^1.4.0",
     "crisp-sdk-web": "^1.0.21",
+    "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
     "form-data": "^4.0.0",
@@ -32,6 +36,7 @@
     "stripe": "^13.2.0"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "autoprefixer": "^10.4.15",
     "daisyui": "^3.6.1",
     "postcss": "^8.4.28",

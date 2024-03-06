@@ -7,22 +7,27 @@ import { useRef, useState } from "react";
 
 const faqList = [
   {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+    question: "What exactly do I get?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        We streamline your hiring process by interviewing software engineer candidates on your behalf. Our service includes scheduling the interview, conducting it, and providing a detailed analysis and recommendation on the candidate post-interview.
+      </div>
+    ),
   },
   {
-    question: "Can I get a refund?",
+    question: "When can candidates schedule interviews?",
     answer: (
       <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
+        Interviews can be scheduled 24/7 at a time that works best for the candidate. They will receive a Calendly link to choose a suitable time slot.
       </p>
     ),
   },
   {
     question: "I have another question",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <div className="space-y-2 leading-relaxed">
+        Great, we&apos;re here to help! Please feel free to contact us by email at Mubarak@BrighterTunnel.com.
+      </div>
     ),
   },
 ];
@@ -42,7 +47,7 @@ const Item = ({ item }) => {
         aria-expanded={isOpen}
       >
         <span
-          className={`flex-1 text-base-content ${isOpen ? "text-primary" : ""}`}
+          className={`flex-1 text-base-content ${isOpen ? "text-blue-500" : ""}`}
         >
           {item?.question}
         </span>
@@ -89,10 +94,10 @@ const Item = ({ item }) => {
 
 const FAQ = () => {
   return (
-    <section className="bg-base-200" id="faq">
+    <section className="bg-base-100" id="faq">
       <div className="py-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         <div className="flex flex-col text-left basis-1/2">
-          <p className="inline-block font-semibold text-primary mb-4">FAQ</p>
+          <p className="inline-block font-semibold text-blue-500 mb-4">FAQ</p>
           <p className="sm:text-4xl text-3xl font-extrabold text-base-content">
             Frequently Asked Questions
           </p>
