@@ -115,7 +115,7 @@ export default function LandingPage() {
     <div className="min-h-screen bg-white flex flex-col font-sans">
       <header className="bg-gray-100 text-gray-800 p-4 md:p-6 w-full z-50">
         <div className="container mx-auto flex justify-between items-center">
-          <a href="#" className="text-2xl text-sky-800 font-bold">
+          <a href="" className="md:text-xl text-md text-sky-800 font-bold">
             Brighter Tunnel Bootcamp
           </a>
           <nav className="hidden md:flex items-center space-x-4">
@@ -309,6 +309,8 @@ export default function LandingPage() {
                   src="https://cdn.prod.website-files.com/5dcc7f8c449e597ed83356b8/650261d8e1e0ef386de09642_unsplash_JO_S6ewBqAk.webp"
                   alt="Laptop on desk with cityscape view"
                   className="rounded-lg shadow-lg"
+                  width={500}
+                  height={300}
                 />
               </div>
               <div className="md:w-1/2">
