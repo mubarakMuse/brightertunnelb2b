@@ -8,6 +8,8 @@ const nextConfig = {
       "images.unsplash.com",
       "logos-world.net",
       "unsplash.com",
+      "cdn.prod.website-files.com",
+      "via.placeholder.com"
     ],
   },
 };
