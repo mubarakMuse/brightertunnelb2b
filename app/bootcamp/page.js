@@ -61,48 +61,53 @@ export default function LandingPage() {
 
   const curriculum = [
     {
-      weeks: "Weeks 1-3",
+      weeks: "Weeks 1-2",
       title: "Programming Fundamentals",
       details:
         "Introduction to programming concepts, variables, control structures, functions, and basic data structures.",
     },
     {
-      weeks: "Weeks 4-6",
-      title: "Computer Science",
+      weeks: "Weeks 3-4",
+      title: "Advanced Programming",
+      details:
+        "Object-oriented programming, debugging techniques, and advanced data structures.",
+    },
+    {
+      weeks: "Weeks 5-6",
+      title: "Computer Science Essentials",
       details:
         "Algorithms, data structures, complexity analysis, and problem-solving techniques.",
     },
     {
-      weeks: "Weeks 7-9",
+      weeks: "Weeks 7-8",
       title: "Web Development Fundamentals",
       details: "HTML, CSS, JavaScript, and building responsive web pages.",
     },
     {
-      weeks: "Weeks 10-13",
-      title: "Back-End Engineering",
+      weeks: "Weeks 9-10",
+      title: "Advanced Web Development",
       details:
-        "Server-side development, databases, RESTful APIs, and back-end frameworks.",
+        "Client-server architecture, RESTful APIs, and advanced JavaScript frameworks.",
     },
     {
-      weeks: "Weeks 14-16",
+      weeks: "Weeks 11-12",
+      title: "Back-End Engineering",
+      details:
+        "Server-side development, databases, and back-end frameworks like Express and Flask.",
+    },
+    {
+      weeks: "Weeks 13-14",
       title: "Front-End Engineering",
       details:
         "Advanced JavaScript, ReactJS, state management, and front-end best practices.",
     },
     {
-      weeks: "Weeks 17-20",
-      title: "Python",
-      details:
-        "Python programming, Flask framework, and building web applications with Python.",
-    },
-    {
-      weeks: "Weeks 21-24",
+      weeks: "Weeks 15-16",
       title: "Career Quest",
       details:
         "Career preparation, resume building, interview skills, and job search strategies.",
     },
   ];
-
   const toggleCurriculum = (index) => {
     setOpenCurriculum(openCurriculum === index ? null : index);
   };
