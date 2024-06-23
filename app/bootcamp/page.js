@@ -266,7 +266,7 @@ export default function LandingPage() {
         <section className="bg-gray-100 py-12 mt-4 md:py-16" id="features">
           <div className="container mx-auto text-center px-6">
             <h2 className="text-4xl font-bold text-center mb-8">
-              Why Brighter Tunnel's 12-Week Bootcamp?
+             {" Why Brighter Tunnel's 12-Week Bootcamp?"}
             </h2>
             <p className="text-center mb-12 max-w-3xl mx-auto">
               We are engineers and educators. We know the skills that make a
@@ -305,7 +305,7 @@ export default function LandingPage() {
             </p>
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img
+                <Image
                   src="https://cdn.prod.website-files.com/5dcc7f8c449e597ed83356b8/650261d8e1e0ef386de09642_unsplash_JO_S6ewBqAk.webp"
                   alt="Laptop on desk with cityscape view"
                   className="rounded-lg shadow-lg"
@@ -313,7 +313,7 @@ export default function LandingPage() {
               </div>
               <div className="md:w-1/2">
                 <h3 className="text-2xl font-semibold mb-4">
-                  In completing our AI curriculum, you'll have:
+                {" In completing our AI curriculum, you'll have:"}
                 </h3>
                 <ul className="space-y-4">
                   {[
@@ -350,14 +350,14 @@ export default function LandingPage() {
         <section className="bg-sky-900 py-12 md:py-20" id="curriculum">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-4xl text-white font-bold text-center mb-8">
-              What you'll learn in 12 weeks
+              {`What you'll learn in 12 weeks`}
             </h2>
             <p className="text-center mb-12 text-white max-w-3xl mx-auto">
-              Your hard work and commitment will transform you into a Full-stack
+              {`Your hard work and commitment will transform you into a Full-stack
               Web Developer. Build from scratch with JavaScript, Python, SQL,
               HTML and CSS. Accelerate your projects with ReactJS, Express,
               Flask, and SQL Alchemy. You'll be shocked at how much you can
-              learn - employers will be too.
+              learn - employers will be too.`}
             </p>
             <div className="max-w-4xl mx-auto">
               {curriculum.map((item, index) => (
