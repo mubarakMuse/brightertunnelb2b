@@ -14,7 +14,7 @@ export default function LandingPage() {
   const services = [
     {
       title: "MVP In A Week",
-      price: "$9,850",
+      price: "$4,850",
       description: "Turn your Buissness idea to a fully functional software product in just 7 days.",
       features: [
         "Fully functional MVP in one week",
@@ -26,7 +26,7 @@ export default function LandingPage() {
     },
     {
       title: "Consulting & Advisory",
-      price: "$100 Per Hour",
+      price: "$69 Per Hour",
       description: "Get personalized advice and expert guidance for your startup.",
       features: [
         "Customized consulting sessions",
@@ -76,12 +76,15 @@ export default function LandingPage() {
   ];
 
   const weeks = [
-    { weekStart: "2024-09-21", weekEnd: "2024-09-27", isSoldOut: true },
-    { weekStart: "2024-09-28", weekEnd: "2024-10-04", isSoldOut: false },
-    { weekStart: "2024-10-05", weekEnd: "2024-10-11", isSoldOut: false },
-    { weekStart: "2024-10-12", weekEnd: "2024-10-18", isSoldOut: false },
-    { weekStart: "2024-10-19", weekEnd: "2024-10-25", isSoldOut: false },
-    { weekStart: "2024-10-26", weekEnd: "2024-11-01", isSoldOut: false },
+  
+    { weekStart: "2024-10-06", weekEnd: "2024-10-13", isSoldOut: true },
+    { weekStart: "2024-10-14", weekEnd: "2024-10-20", isSoldOut: true },
+    { weekStart: "2024-10-21", weekEnd: "2024-10-27", isSoldOut: false },
+    { weekStart: "2024-10-28", weekEnd: "2024-11-04", isSoldOut: false },
+    { weekStart: "2024-11-05", weekEnd: "2024-11-11", isSoldOut: false },
+    { weekStart: "2024-11-12", weekEnd: "2024-11-18", isSoldOut: true },
+    { weekStart: "2024-11-19", weekEnd: "2024-11-25", isSoldOut: false },
+
   ];
 
   const toggleCurriculum = (index) => {
