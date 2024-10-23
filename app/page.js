@@ -13,11 +13,11 @@ export default function LandingPage() {
 
   const services = [
     {
-      title: "MVP In A Week",
+      title: "MVP In 7 days",
       price: "$4,850",
-      description: "Turn your Buissness idea to a fully functional software product in just 7 days.",
+      description: "Turn your Buissness idea into a fully functional software product in just 7 days.",
       features: [
-        "Fully functional MVP in one week",
+        "Fully functional MVP in 7 days (one week)",
         "End-to-end development",
         "Dedicated team of engineers",
         "$500 Deposit to reserve a spot"
