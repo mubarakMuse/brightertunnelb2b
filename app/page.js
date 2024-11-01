@@ -8,7 +8,7 @@ export default function LandingPage() {
 
   // Corrected links for Stripe and Calendly
   const stripeLink = "https://book.stripe.com/28o7vQ9M17ac98cdQS"; // Replace with your Stripe payment link
-  const applyLink = "https://calendly.com/brightertunnel/chat-with-brighter-tunnel";
+  const applyLink = "https://calendly.com/brightertunnel/chat-with-mubarak-15-min";
 
 
   const services = [
