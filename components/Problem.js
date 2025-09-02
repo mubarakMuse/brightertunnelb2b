@@ -1,55 +1,69 @@
 import React from 'react';
 
-const Arrow = ({ extraStyle }) => {
+const ProblemCard = ({ icon, title, description, color }) => {
   return (
-    <svg
-      className={`shrink-0 w-12 fill-neutral-content opacity-70 ${extraStyle}`}
-      viewBox="0 0 138 138"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g>
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M72.9644 5.31431C98.8774 43.8211 83.3812 88.048 54.9567 120.735C54.4696 121.298 54.5274 122.151 55.0896 122.639C55.6518 123.126 56.5051 123.068 56.9922 122.506C86.2147 88.9044 101.84 43.3918 75.2003 3.80657C74.7866 3.18904 73.9486 3.02602 73.3287 3.44222C72.7113 3.85613 72.5484 4.69426 72.9644 5.31431Z"
-        />
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M56.5084 121.007C56.9835 118.685 57.6119 115.777 57.6736 115.445C59.3456 106.446 59.5323 97.67 58.4433 88.5628C58.3558 87.8236 57.6824 87.2948 56.9433 87.3824C56.2042 87.4699 55.6756 88.1435 55.7631 88.8828C56.8219 97.7138 56.6432 106.225 55.0203 114.954C54.926 115.463 53.5093 121.999 53.3221 123.342C53.2427 123.893 53.3688 124.229 53.4061 124.305C53.5887 124.719 53.8782 124.911 54.1287 125.015C54.4123 125.13 54.9267 125.205 55.5376 124.926C56.1758 124.631 57.3434 123.699 57.6571 123.487C62.3995 120.309 67.4155 116.348 72.791 113.634C77.9171 111.045 83.3769 109.588 89.255 111.269C89.9704 111.475 90.7181 111.057 90.9235 110.342C91.1288 109.626 90.7117 108.878 89.9963 108.673C83.424 106.794 77.3049 108.33 71.5763 111.223C66.2328 113.922 61.2322 117.814 56.5084 121.007Z"
-        />
-      </g>
-    </svg>
-  );
-};
-
-const Step = ({ emoji, text }) => {
-  return (
-    <div className="w-full md:w-48 flex flex-col gap-2 items-center justify-center">
-      <span className="text-4xl">{emoji}</span>
-      <h3 className="font-bold">{text}</h3>
+    <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+      <div className={`w-16 h-16 ${color} rounded-2xl flex items-center justify-center mb-6`}>
+        <span className="text-2xl">{icon}</span>
+      </div>
+      <h3 className="text-xl font-bold text-gray-900 mb-3">{title}</h3>
+      <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
     </div>
   );
 };
 
 const Problem = () => {
-  return (
-    <section className="bg-neutral text-neutral-content">
-      <div className="max-w-7xl mx-auto px-8 py-16 md:py-32 text-center">
-        <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
-          The High Cost of a Bad Hire Can Echo Through Your Company
-        </h2>
-        <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
-          The stakes are high, and the waters murky. Every misstep in hiring could mean wasted resources, stalled innovation, and a demoralized team.
-        </p>
+  const problems = [
+    {
+      icon: "⏰",
+      title: "Time Wasted on Unqualified Candidates",
+      description: "Spend hours interviewing developers who can't code, leading to frustration and wasted resources.",
+      color: "bg-red-100"
+    },
+    {
+      icon: "💰",
+      title: "Cost of Bad Hires",
+      description: "A single bad engineering hire can cost your company significantly in recruitment, training, and lost productivity.",
+      color: "bg-orange-100"
+    },
+    {
+      icon: "📉",
+      title: "Team Morale Impact",
+      description: "Poor hires create technical debt, slow down projects, and demotivate your existing team members.",
+      color: "bg-purple-100"
+    }
+  ];
 
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6">
-          <Step emoji="🔍" text="Endless hours sifting through resumes" />
-          <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
-          <Step emoji="😕" text="Disjointed interviews that fail to assess skills" />
-          <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
-          <Step emoji="💸" text="The costly aftermath of an ill-fitting hire" />
+  return (
+    <section id="problem-section" className="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-red-100 text-red-800 text-sm font-medium mb-6">
+            <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+            </svg>
+            The Hiring Challenge
+          </div>
+          
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 max-w-4xl mx-auto leading-tight">
+            Traditional Hiring is{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
+              Inefficient
+            </span>
+          </h2>
+          
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Every company struggles with hiring good engineers. 
+            The current process is broken, and it&apos;s costing you time and money.
+          </p>
+        </div>
+
+        {/* Problem Cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {problems.map((problem, index) => (
+            <ProblemCard key={index} {...problem} />
+          ))}
         </div>
       </div>
     </section>

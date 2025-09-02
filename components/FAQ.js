@@ -18,7 +18,7 @@ const faqList = [
     question: "When can candidates schedule interviews?",
     answer: (
       <p>
-        Interviews can be scheduled 24/7 at a time that works best for the candidate. They will receive a Calendly link to choose a suitable time slot.
+        Interviews can be scheduled 24/7 at a time that works best for the candidate. They will receive a Cal.com link to choose a suitable time slot.
       </p>
     ),
   },
@@ -39,7 +39,7 @@ const Item = ({ item }) => {
   return (
     <li>
       <button
-        className="relative flex gap-2 items-center w-full py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10"
+        className="relative flex gap-2 items-center w-full py-4 sm:py-5 text-base font-semibold text-left border-t md:text-lg border-base-content/10 hover:bg-gray-50/50 transition-colors duration-200"
         onClick={(e) => {
           e.preventDefault();
           setIsOpen(!isOpen);
@@ -52,7 +52,7 @@ const Item = ({ item }) => {
           {item?.question}
         </span>
         <svg
-          className={`flex-shrink-0 w-4 h-4 ml-auto fill-current`}
+          className={`flex-shrink-0 w-5 h-5 sm:w-4 sm:h-4 ml-auto fill-current`}
           viewBox="0 0 16 16"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -86,7 +86,7 @@ const Item = ({ item }) => {
             : { maxHeight: 0, opacity: 0 }
         }
       >
-        <div className="pb-5 leading-relaxed">{item?.answer}</div>
+        <div className="pb-4 sm:pb-5 leading-relaxed text-sm sm:text-base">{item?.answer}</div>
       </div>
     </li>
   );
@@ -95,19 +95,23 @@ const Item = ({ item }) => {
 const FAQ = () => {
   return (
     <section className="bg-base-100" id="faq">
-      <div className="py-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
+      <div className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-8 sm:gap-10 lg:gap-12">
         <div className="flex flex-col text-left basis-1/2">
-          <p className="inline-block font-semibold text-blue-500 mb-4">FAQ</p>
-          <p className="sm:text-4xl text-3xl font-extrabold text-base-content">
+          <p className="inline-block font-semibold text-blue-500 mb-4 sm:mb-6">FAQ</p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
             Frequently Asked Questions
+          </h2>
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+            Get answers to common questions about our technical interview services.
           </p>
         </div>
-
-        <ul className="basis-1/2">
-          {faqList.map((item, i) => (
-            <Item key={i} item={item} />
-          ))}
-        </ul>
+        <div className="basis-1/2">
+          <ul className="space-y-2">
+            {faqList.map((item, index) => (
+              <Item key={index} item={item} />
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

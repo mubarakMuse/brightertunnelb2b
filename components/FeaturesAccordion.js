@@ -197,20 +197,20 @@ const FeaturesAccordion = () => {
 
   return (
     <section
-      className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100 "
+      className="py-16 sm:py-20 lg:py-24 md:py-32 space-y-16 sm:space-y-20 lg:space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-100"
       id="features"
     >
-      <div className="px-8">
-      <p className="inline-block font-semibold text-blue-500 mb-4">Features</p>
+      <div className="px-4 sm:px-6 lg:px-8">
+        <p className="inline-block font-semibold text-blue-500 mb-4 sm:mb-6">Features</p>
 
-        <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
+        <h2 className="font-extrabold text-2xl sm:text-3xl lg:text-4xl xl:text-6xl tracking-tight mb-8 sm:mb-12 md:mb-24">
           How our interviews help you
           <span className="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
             hire the best Engineers 
           </span>
         </h2>
-        <div className=" flex flex-col md:flex-row gap-12 md:gap-24">
-          <div className="grid grid-cols-1 items-stretch gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-20">
+        <div className="flex flex-col md:flex-row gap-8 sm:gap-12 md:gap-24">
+          <div className="grid grid-cols-1 items-stretch gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-16 xl:gap-20">
             <ul className="w-full">
               {features.map((feature, i) => (
                 <Item
