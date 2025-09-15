@@ -16,20 +16,20 @@ const Problem = () => {
   const problems = [
     {
       icon: "⏰",
-      title: "Time Wasted on Unqualified Candidates",
-      description: "Spend hours interviewing developers who can't code, leading to frustration and wasted resources.",
+      title: "Inefficient Hiring Processes",
+      description: "Spend hours interviewing developers who can't code, leading to frustration and wasted resources that could be better invested in growth.",
       color: "bg-red-100"
     },
     {
-      icon: "💰",
-      title: "Cost of Bad Hires",
-      description: "A single bad engineering hire can cost your company significantly in recruitment, training, and lost productivity.",
+      icon: "🤖",
+      title: "Missing AI Opportunities",
+      description: "Your competitors are using AI to cut costs and increase efficiency while you're falling behind. Manual processes are eating into your profits.",
       color: "bg-orange-100"
     },
     {
-      icon: "📉",
-      title: "Team Morale Impact",
-      description: "Poor hires create technical debt, slow down projects, and demotivate your existing team members.",
+      icon: "💻",
+      title: "Outdated Technology",
+      description: "Legacy systems and off-the-shelf solutions don't fit your unique business needs, creating bottlenecks and limiting growth potential.",
       color: "bg-purple-100"
     }
   ];
@@ -43,19 +43,19 @@ const Problem = () => {
             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
             </svg>
-            The Hiring Challenge
+            The Technology Challenge
           </div>
           
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 max-w-4xl mx-auto leading-tight">
-            Traditional Hiring is{" "}
+            Your Business is{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
-              Inefficient
+              Falling Behind
             </span>
           </h2>
           
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Every company struggles with hiring good engineers. 
-            The current process is broken, and it&apos;s costing you time and money.
+            While your competitors leverage technology to cut costs and scale efficiently, 
+            you&apos;re stuck with outdated processes that limit growth and profitability.
           </p>
         </div>
 

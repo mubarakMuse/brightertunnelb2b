@@ -7,18 +7,34 @@ import { useRef, useState } from "react";
 
 const faqList = [
   {
-    question: "What exactly do I get?",
+    question: "What services do you offer?",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        We streamline your hiring process by interviewing software engineer candidates on your behalf. Our service includes scheduling the interview, conducting it, and providing a detailed analysis and recommendation on the candidate post-interview.
+        We offer three main services: AI Integration Consulting to help you automate processes and cut costs, Technical Interview Services to hire better engineers, and Custom Software Development to build solutions that fit your business perfectly. You can use any service individually or combine them for maximum impact.
       </div>
     ),
   },
   {
-    question: "When can candidates schedule interviews?",
+    question: "How do I choose which service I need?",
     answer: (
       <p>
-        Interviews can be scheduled 24/7 at a time that works best for the candidate. They will receive a Cal.com link to choose a suitable time slot.
+        Start with a consultation call where we&apos;ll assess your business needs. If you need to hire engineers, we&apos;ll recommend our Technical Interview Services. If you want to automate processes or integrate AI, we&apos;ll suggest AI Integration Consulting. If you need custom software built, we&apos;ll recommend our Custom Software Development service.
+      </p>
+    ),
+  },
+  {
+    question: "Can I use multiple services together?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Absolutely! Many clients combine our services. For example, you might use our Technical Interview Services to hire developers, then our Custom Software Development to build your product, and finally our AI Integration Consulting to automate parts of your business. We can create a comprehensive technology strategy for your company.
+      </div>
+    ),
+  },
+  {
+    question: "How quickly can you get started?",
+    answer: (
+      <p>
+        We can typically start most projects within 1-2 weeks of our initial consultation. For Technical Interview Services, we can often begin immediately. Custom Software Development and AI Integration projects may require more planning time depending on complexity.
       </p>
     ),
   },
@@ -26,7 +42,7 @@ const faqList = [
     question: "I have another question",
     answer: (
       <div className="space-y-2 leading-relaxed">
-        Great, we&apos;re here to help! Please feel free to contact us by email at Mubarak@BrighterTunnel.com.
+        Great, we&apos;re here to help! Please feel free to contact us by email at Mubarak@BrighterTunnel.com or schedule a consultation call to discuss your specific needs.
       </div>
     ),
   },
@@ -102,7 +118,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-            Get answers to common questions about our technical interview services.
+            Get answers to common questions about our technology consulting services.
           </p>
         </div>
         <div className="basis-1/2">

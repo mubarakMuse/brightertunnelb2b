@@ -9,14 +9,17 @@ import config from "@/config";
 
 const links = [
   {
-    href: "/#features",
-    label: "Features",
+    href: "/services/ai-integration",
+    label: "AI Integration",
   },
   {
-    href: "/#process",
-    label: "Our Process",
+    href: "/services/technical-interviews",
+    label: "Technical Interviews",
   },
- 
+  {
+    href: "/services/custom-software",
+    label: "Custom Software",
+  },
   {
     href: "/#faq",
     label: "FAQ",

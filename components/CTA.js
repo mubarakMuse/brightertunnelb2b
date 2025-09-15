@@ -20,20 +20,21 @@ const CTA = () => {
             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            Ready to Get Started?
+            Ready to Transform Your Business?
           </div>
           
           {/* Main Headline */}
           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 max-w-5xl mx-auto leading-tight">
-            Improve Your{" "}
+            Let&apos;s Build Your{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-purple-200">
-              Technical Interviews
+              Technology Future
             </span>
           </h2>
           
           {/* Subheadline */}
           <p className="text-lg sm:text-xl lg:text-2xl text-blue-100 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-            Let&apos;s work together to make your engineering hiring process more effective.
+            Choose the service you need, or combine them for maximum impact. 
+            Each service is designed to solve specific business challenges.
           </p>
           
           {/* CTA Buttons */}
@@ -45,7 +46,7 @@ const CTA = () => {
               className="w-full sm:w-auto"
             >
               <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-blue-900 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-200 transform hover:scale-105 shadow-lg text-sm sm:text-base">
-                Schedule a Meeting
+                Schedule a Consultation
                 <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>

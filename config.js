@@ -3,7 +3,7 @@ const config = {
   appName: "Brighter Tunnel",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
-    "Helping companies hire the best engineering talent by improving the quality of their technical interviewing.",
+    "Technology consulting services: AI integration, technical interviews, and custom software development to help businesses cut costs and increase profits.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
   domainName: "BrighterTunnel.com",
   crisp: {
@@ -22,20 +22,20 @@ const config = {
             ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
             : "price_456",
         //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Pay Per Interview",
+        name: "Single Technical Interview",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
+        description: "Perfect for one-off hiring needs",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 100,
+        price: 150,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 150,
+        priceAnchor: 200,
         features: [
           {
-            name: "Pay As You Go",
+            name: "Expert technical interviewer",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "Real-world coding challenges" },
+          { name: "Detailed candidate evaluation" },
+          { name: "24-hour report delivery" },
         ],
       },
       {
@@ -45,19 +45,19 @@ const config = {
           process.env.NODE_ENV === "development"
             ? "price_1O5KtcAxyNprDp7iftKnrrpw"
             : "price_456",
-        name: "10-Interview Bundle",
-        description: "Buy early! Save more!",
-        price: 9500,
+        name: "10-Interview Package",
+        description: "Best value for regular hiring",
+        price: 1200,
         priceAnchor: 1500,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "10 technical interviews",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          { name: "Expert interviewers" },
+          { name: "Detailed evaluations" },
+          { name: "Flexible scheduling" },
+          { name: "Priority support" },
+          { name: "6-month validity" },
         ],
       },
     ],
@@ -72,13 +72,13 @@ const config = {
     // subdomain to use when sending emails, if you don't have a subdomain, just remove it. Highly recommended to have one (i.e. mg.yourdomain.com or mail.yourdomain.com)
     subdomain: "mg",
     // REQUIRED — Email 'From' field to be used when sending magic login links
-    fromNoReply: `ShipFast <noreply@mg.shipfa.st>`,
+    fromNoReply: `Brighter Tunnel <noreply@mg.brightertunnel.com>`,
     // REQUIRED — Email 'From' field to be used when sending other emails, like abandoned carts, updates etc..
-    fromAdmin: `Marc at ShipFast <marc@mg.shipfa.st>`,
+    fromAdmin: `Mubarak at Brighter Tunnel <mubarak@mg.brightertunnel.com>`,
     // Email shown to customer if need support. Leave empty if not needed => if empty, set up Crisp above, otherwise you won't be able to offer customer support."
-    supportEmail: "marc@mg.shipfa.st",
+    supportEmail: "mubarak@brightertunnel.com",
     // When someone replies to supportEmail sent by the app, forward it to the email below (otherwise it's lost). If you set supportEmail to empty, this will be ignored.
-    forwardRepliesTo: "marc.louvion@gmail.com",
+    forwardRepliesTo: "mubarak@brightertunnel.com",
   },
   colors: {
     // REQUIRED — The DaisyUI theme to use (added to the main layout.js). Leave blank for default (light & dark mode). If you any other theme than light/dark, you need to add it in config.tailwind.js in daisyui.themes.

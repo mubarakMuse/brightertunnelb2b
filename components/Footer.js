@@ -49,30 +49,29 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-6 text-white">Services</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/#process" className="text-gray-300 hover:text-white transition-colors duration-200">
+                <Link href="/services/ai-integration" className="text-gray-300 hover:text-white transition-colors duration-200">
+                  AI Integration
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/technical-interviews" className="text-gray-300 hover:text-white transition-colors duration-200">
                   Technical Interviews
                 </Link>
               </li>
-              
+              <li>
+                <Link href="/services/custom-software" className="text-gray-300 hover:text-white transition-colors duration-200">
+                  Custom Software
+                </Link>
+              </li>
               <li>
                 <Link href="/jobs" className="text-gray-300 hover:text-white transition-colors duration-200">
                   Job Board
                 </Link>
-              </li>
-              <li>
-                <a
-                  href="https://cal.com/brighter-tunnel/15min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Schedule Meeting
-                </a>
               </li>
             </ul>
           </div>
@@ -102,7 +101,7 @@ const Footer = () => {
               © {new Date().getFullYear()} {config.appName}. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm mt-4 md:mt-0">
-              Built with ❤️ for better engineering teams
+              Technology solutions that drive business growth
             </p>
           </div>
         </div>

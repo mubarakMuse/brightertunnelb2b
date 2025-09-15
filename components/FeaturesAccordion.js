@@ -12,12 +12,12 @@ import Image from "next/image";
 // - alt: The alt text of the image (if type is 'image')
 const features = [
   {
-    title: "Expert interview engineers",
+    title: "Technical Interview Services",
     description:
-      "Tired of inconsistent interviews? Our vetted engineers deliver precision and expertise with each session, ensuring a seamless experience for candidates and clear outcomes for your team.",
+      "Hire the right engineers with confidence. Our expert interviewers conduct thorough technical assessments using real-world coding challenges, ensuring you get detailed evaluations and consistent hiring standards that identify top talent.",
     type: "image",
     path: "https://images.unsplash.com/photo-1514543250559-83867827ecce?q=80&w=2850&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Expert interview engineers",
+    alt: "Technical Interview Services",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -36,12 +36,12 @@ const features = [
     ),
   },
   {
-    title: "Battle-tested Content",
+    title: "AI Integration Consulting",
     description:
-      "Our robust interview questions are the crucible through which only the most competent engineers emerge. Don't let subpar content be the weak link in your hiring chain.",
-      type: "image",
-      path: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Code",
+      "Transform your business with AI. We help you identify opportunities where AI can cut costs and increase efficiency, implement custom solutions, and integrate AI tools that deliver measurable ROI and competitive advantages.",
+    type: "image",
+    path: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "AI Integration",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -53,19 +53,20 @@ const features = [
       >
         <path
           strokeLinecap="round"
-          d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+          strokeLinejoin="round"
+          d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
         />
       </svg>
     ),
   },
   {
-    title: "Flexible Scheduling",
+    title: "Custom Software Development",
     description:
-      "Never miss out on top talent due to scheduling conflicts. Our service ensures round-the-clock availability, making interviews possible at any hour – because the right moment to hire should be on your terms.",
-      type: "image",
-      path: "https://images.unsplash.com/photo-1578625155481-7bc40a6481b6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FsZW5kYXJ8ZW58MHx8MHx8fDI%3D",
-      alt: "A Calender",
-      svg: (
+      "Build software that fits your business perfectly. From web applications to mobile apps, we create custom solutions using modern technology stacks with scalable architecture that solve your unique challenges and drive growth.",
+    type: "image",
+    path: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Custom Software Development",
+    svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -77,19 +78,19 @@ const features = [
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
         />
       </svg>
     ),
   },
   {
-    title: "Consistent hiring processes",
+    title: "Comprehensive Technology Consulting",
     description:
-      "Our structured interview system eliminates variables that can skew evaluations, creating an equitable platform for all candidates. Trust in a process designed to spotlight true skill over circumstantial performance.",
-      type: "image",
-      path: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "A computer",
-      svg: (
+      "Get end-to-end technology solutions that drive real business results. We combine our expertise in hiring, AI integration, and custom development to provide comprehensive consulting that transforms your business operations and accelerates growth.",
+    type: "image",
+    path: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Technology Consulting",
+    svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -201,12 +202,12 @@ const FeaturesAccordion = () => {
       id="features"
     >
       <div className="px-4 sm:px-6 lg:px-8">
-        <p className="inline-block font-semibold text-blue-500 mb-4 sm:mb-6">Features</p>
+        <p className="inline-block font-semibold text-blue-500 mb-4 sm:mb-6">Our Solutions</p>
 
         <h2 className="font-extrabold text-2xl sm:text-3xl lg:text-4xl xl:text-6xl tracking-tight mb-8 sm:mb-12 md:mb-24">
-          How our interviews help you
+          How our technology consulting
           <span className="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
-            hire the best Engineers 
+            transforms your business
           </span>
         </h2>
         <div className="flex flex-col md:flex-row gap-8 sm:gap-12 md:gap-24">
