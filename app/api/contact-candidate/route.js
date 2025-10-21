@@ -66,28 +66,28 @@ export async function POST(request) {
     // const emailSubject = `New Candidate Inquiry: ${candidate.first_name} ${candidate.last_name}`;
     
     // const emailContent = `
-New candidate inquiry received!
-
-Candidate Details:
-- Name: ${candidate.first_name} ${candidate.last_name}
-- Experience: ${candidate.yoe} years
-- Location: ${candidate.current_location}
-- Overall Score: ${candidate.overall_score}/10
-- Skills: ${candidate.programming_languages?.join(', ') || 'Not specified'}
-
-Company Details:
-- Company: ${company_name}
-- Contact: ${contact_name}
-- Email: ${email}
-- Phone: ${phone || 'Not provided'}
-
-Message:
-${message}
-
----
-This inquiry was sent from your candidate portal.
-Inquiry ID: ${inquiry?.id || 'N/A'}
-    `;
+    // New candidate inquiry received!
+    //
+    // Candidate Details:
+    // - Name: ${candidate.first_name} ${candidate.last_name}
+    // - Experience: ${candidate.yoe} years
+    // - Location: ${candidate.current_location}
+    // - Overall Score: ${candidate.overall_score}/10
+    // - Skills: ${candidate.programming_languages?.join(', ') || 'Not specified'}
+    //
+    // Company Details:
+    // - Company: ${company_name}
+    // - Contact: ${contact_name}
+    // - Email: ${email}
+    // - Phone: ${phone || 'Not provided'}
+    //
+    // Message:
+    // ${message}
+    //
+    // ---
+    // This inquiry was sent from your candidate portal.
+    // Inquiry ID: ${inquiry?.id || 'N/A'}
+    // `;
 
     // Send email using your existing email service
     // You can use Mailgun, SendGrid, or any other email service
@@ -121,21 +121,21 @@ Inquiry ID: ${inquiry?.id || 'N/A'}
 
     // Send confirmation email to the company
     // const confirmationEmailContent = `
-Hi ${contact_name},
-
-Thank you for your interest in ${candidate.first_name} ${candidate.last_name}!
-
-We've received your inquiry and will get back to you within 24 hours with more details about this candidate.
-
-Here's a summary of what you requested:
-- Candidate: ${candidate.first_name} ${candidate.last_name}
-- Your message: ${message}
-
-We'll be in touch soon!
-
-Best regards,
-The Brighter Tunnel Team
-    `;
+    // Hi ${contact_name},
+    //
+    // Thank you for your interest in ${candidate.first_name} ${candidate.last_name}!
+    //
+    // We've received your inquiry and will get back to you within 24 hours with more details about this candidate.
+    //
+    // Here's a summary of what you requested:
+    // - Candidate: ${candidate.first_name} ${candidate.last_name}
+    // - Your message: ${message}
+    //
+    // We'll be in touch soon!
+    //
+    // Best regards,
+    // The Brighter Tunnel Team
+    // `;
 
     // TODO: Send confirmation email to the company
     /*
