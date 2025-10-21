@@ -63,9 +63,9 @@ export async function POST(request) {
     }
 
     // Prepare email content
-    const emailSubject = `New Candidate Inquiry: ${candidate.first_name} ${candidate.last_name}`;
+    // const emailSubject = `New Candidate Inquiry: ${candidate.first_name} ${candidate.last_name}`;
     
-    const emailContent = `
+    // const emailContent = `
 New candidate inquiry received!
 
 Candidate Details:
@@ -120,7 +120,7 @@ Inquiry ID: ${inquiry?.id || 'N/A'}
     */
 
     // Send confirmation email to the company
-    const confirmationEmailContent = `
+    // const confirmationEmailContent = `
 Hi ${contact_name},
 
 Thank you for your interest in ${candidate.first_name} ${candidate.last_name}!

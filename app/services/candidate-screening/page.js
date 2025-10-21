@@ -144,7 +144,7 @@ const CandidateScreeningPage = () => {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Traditional hiring is broken. You spend weeks screening resumes, conducting initial interviews, 
-              only to find out candidates can't code or don't fit your culture.
+              only to find out candidates can&apos;t code or don&apos;t fit your culture.
             </p>
           </div>
           
@@ -295,7 +295,7 @@ const CandidateScreeningPage = () => {
               <p className="text-blue-100 mb-6">{plans[selectedPlan].description}</p>
               
               <div className="bg-white/10 rounded-lg p-6 mb-6">
-                <h4 className="text-lg font-semibold mb-4">What's Included:</h4>
+                <h4 className="text-lg font-semibold mb-4">What&apos;s Included:</h4>
                 <ul className="text-left space-y-2">
                   <li className="flex items-center">
                     <span className="text-green-400 mr-2">✓</span>
@@ -364,7 +364,7 @@ const CandidateScreeningPage = () => {
                     ))}
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4 italic">"{testimonial.content}"</p>
+                <p className="text-gray-600 mb-4 italic">&quot;{testimonial.content}&quot;</p>
                 <div>
                   <div className="font-semibold text-gray-900">{testimonial.name}</div>
                   <div className="text-sm text-gray-500">{testimonial.role}, {testimonial.company}</div>

@@ -104,9 +104,9 @@ const NewCandidatePage = () => {
             </svg>
           </div>
           <h1 className="text-2xl font-bold text-gray-900 mb-2">Profile Submitted Successfully!</h1>
-          <p className="text-gray-600 mb-4">
-            Thank you for submitting your profile. We'll review it and get back to you soon.
-          </p>
+            <p className="text-gray-600 mb-4">
+              Thank you for submitting your profile. We&apos;ll review it and get back to you soon.
+            </p>
           <p className="text-sm text-gray-500">
             Redirecting to candidates page...
           </p>

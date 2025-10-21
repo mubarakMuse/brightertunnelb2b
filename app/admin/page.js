@@ -709,7 +709,7 @@ const AdminDashboard = () => {
                           className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         />
                         <p className="mt-1 text-xs text-gray-500">
-                          Paste the Google Drive shareable link here. Make sure the file is set to "Anyone with the link can view"
+                          Paste the Google Drive shareable link here. Make sure the file is set to &quot;Anyone with the link can view&quot;
                         </p>
                       </div>
                       <div>

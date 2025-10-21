@@ -39,7 +39,7 @@ const FileUpload = ({ onUploadSuccess, currentUrl = "" }) => {
       const filePath = `resumes/${fileName}`;
 
       // Upload file to Supabase Storage
-      const { data, error } = await supabase.storage
+      const { error } = await supabase.storage
         .from('resumes')
         .upload(filePath, file, {
           cacheControl: '3600',

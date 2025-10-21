@@ -107,7 +107,7 @@ const ClientRegistration = ({ isOpen, onClose, onSuccess }) => {
           <div className="space-y-4">
             <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
               <p className="font-medium">Account created successfully!</p>
-              <p className="text-sm mt-1">We've sent your access code to {formData.email}</p>
+              <p className="text-sm mt-1">We&apos;ve sent your access code to {formData.email}</p>
             </div>
             
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
@@ -189,8 +189,8 @@ const ClientRegistration = ({ isOpen, onClose, onSuccess }) => {
             <div className="bg-gray-50 rounded-lg p-4">
               <h3 className="font-medium text-gray-900 mb-2">What happens next?</h3>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li>• We'll create your account instantly</li>
-                <li>• You'll receive a unique access code</li>
+                <li>• We&apos;ll create your account instantly</li>
+                <li>• You&apos;ll receive a unique access code</li>
                 <li>• Use the code to view our candidate pool</li>
                 <li>• Access detailed candidate profiles and resumes</li>
               </ul>

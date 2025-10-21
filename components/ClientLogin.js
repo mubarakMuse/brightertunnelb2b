@@ -95,7 +95,7 @@ const ClientLogin = ({ isOpen, onClose, onLogin }) => {
           </div>
 
           <div className="bg-blue-50 rounded-lg p-4">
-            <h3 className="font-medium text-blue-900 mb-2">Don't have an access code?</h3>
+            <h3 className="font-medium text-blue-900 mb-2">Don&apos;t have an access code?</h3>
             <p className="text-sm text-blue-700">
               Contact us to get your company set up with access to our candidate pool.
             </p>
